@@ -1,0 +1,20 @@
+
+.mynavbar {
+    background-color: #302f2f !important; /* Color de fondo */
+    color: aquamarine !important; /* Color del texto */
+}
+
+/* Opcional: Modificar el color del texto para los enlaces específicamente */
+.mynavbar .nav-link {
+    color: rgb(253, 253, 253) !important;
+}
+
+
+.container {
+    height: 50px; 
+}
+
+.CARTlogo{
+    padding-left: 20px;
+}
+
