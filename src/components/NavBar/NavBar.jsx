@@ -4,26 +4,27 @@ import Navbar from "react-bootstrap/Navbar";
 import './NavBar.css';
 import Logo from "../assets/cts logo2.png"
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
-    const cartItemCount = 0;
+    const cartItemCount = 2;
     return (
         <>
             <Navbar className="mynavbar" bg="none" >
                 <Container className="d-flex justify-content-between">
-                    <Navbar.Brand href="#home">
+                    <Link to='/'>
                         <img
                         src={Logo}
                         alt="Logo2"
                         height="65"
                         className="d-inline-block align-top"
                         />
-                    </Navbar.Brand>
+                    </Link>
                     <Nav className="ms-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">About</Nav.Link>
-                        <Nav.Link href="#pricing">Product</Nav.Link>
-                        <Nav.Link href="#pricing">Contact</Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="#About">About</Nav.Link>
+                        <Nav.Link href="#Product">Product</Nav.Link>
+                        <Nav.Link href="#Contact">Contact</Nav.Link>
                     </Nav>
                     <CartWidget itemCount={cartItemCount} />
                 </Container>

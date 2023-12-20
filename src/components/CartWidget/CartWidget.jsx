@@ -1,14 +1,14 @@
 
-import LogoImage from "../assets/cart-shopping-solid.svg";
+import LogoImage from "../assets/Shopping_cart_font_awesome.svg";
 import './CartWidget.css';
 
 const CartWidget = ({ itemCount }) => {
     return (
         <div className="cart-widget">
-            <img
+            <img 
                 src={LogoImage}
                 alt="cart"
-                height="20"
+                height="25"
                 className="d-inline-block align-top"
             />
             <span className="item-count">{itemCount}</span>

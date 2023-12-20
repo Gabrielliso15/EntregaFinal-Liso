@@ -1,22 +1,23 @@
 //componentes
-import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/itemListContainer/itemListContainer';
-
+import { MainRouter } from './router/MainRouter';
+import { useEffect } from 'react';
 // estilos
-
-import './App.css'
-
+import './App.css';
 //boostrap
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+//
 
 function App() {
+
+  useEffect(() => {
+    document.title = "ClickTechStore";
+  })
+
   return (
       <div style={{width: '100vw', height : '100vh'}}>
-        <NavBar/>
-        <ItemListContainer greeting = "ClickTechStore en proceso!"/>
+        <MainRouter/>
     </div>
   );
-}
+};
 
-export default App
+export default App;
