@@ -10,24 +10,22 @@ const ItemCount = ({productId}) => {
 
     const { count, setCount} = useContext(CartContext);
 
-    const handleAdd = () => {
+    // const handleAdd = () => {
 
-        setCountItem (countItem + 1)
+    //     setCountItem (countItem + 1)
     
-    }
+    // }
 
-    const handleRemove = () => {
-        setCountItem(countItem - 1 >= 1 ? countItem - 1 : 1);
-    };
+    // const handleRemove = () => {
+    //     setCountItem(countItem - 1 >= 1 ? countItem - 1 : 1);
+    // };
 
     const handleAddProductToCart = () => {
-        // Validar productId antes de continuar
         if (!productId) {
             console.error("ProductId no válido");
             return;
         }
 
-        // Actualizar el carrito con la nueva cantidad
         const existingProductIndex = count.findIndex((item) => item.id === productId);
 
         if (existingProductIndex !== -1) {
@@ -42,7 +40,6 @@ const ItemCount = ({productId}) => {
             setCount([...count, newProduct]);
         }
 
-        // Restablecer la cantidad a 1 después de agregar al carrito
         setCountItem(1);
     };
 

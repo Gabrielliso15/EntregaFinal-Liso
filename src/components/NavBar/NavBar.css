@@ -1,10 +1,9 @@
 
 .mynavbar {
-    background-color: #302f2f !important; /* Color de fondo */
-    color: aquamarine !important; /* Color del texto */
+    background-color: #302f2f !important; 
+    color: aquamarine !important; 
 }
 
-/* Opcional: Modificar el color del texto para los enlaces específicamente */
 .mynavbar .nav-link {
     color: rgb(253, 253, 253) !important;
 }

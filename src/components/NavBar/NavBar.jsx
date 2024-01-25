@@ -7,11 +7,6 @@ import CartWidget from './CartWidget';
 import { Link } from "react-router-dom";
 import { NavDropdown } from "react-bootstrap";
 
-// import { useCategory } from "../../hooks/useCategory";
-// import { useContext } from "react";
-// import { CartContext } from "../../context/CartContext";
-
-
 import { useGetCategories } from "../../hooks/useProducts";
 
 
@@ -34,7 +29,7 @@ const NavBar = () => {
                     <Nav className="ms-auto">
                         <Nav.Link href="#About">About</Nav.Link>
                         <Nav.Link href="#Contact">Contact</Nav.Link>
-                        <NavDropdown title="Categorias" id="basic-nav-dropdown">
+                        <NavDropdown title="Categories" id="basic-nav-dropdown">
                             {categories.map((category, index) => {
                                 return (
                                     <NavDropdown.Item key={index}>
