@@ -1,0 +1,33 @@
+.divprincipal{
+    justify-content: center;
+    display: flex;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.product-item img {
+    width: 100px; 
+    height: 100px; 
+    margin-right: 20px; 
+}
+
+.product-details {
+    text-align: left; 
+}
+
+.totaltext{
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: antiquewhite;
+}
+
+.botoncheck{
+    background-color: greenyellow;
+}
+

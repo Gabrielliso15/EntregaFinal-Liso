@@ -1,0 +1,22 @@
+.div-principal{
+    display: flex;
+    width: 100%;
+}
+
+.div-principal img{
+    width: 600px;
+}
+
+.div-secundario{
+    width: 600px;
+
+}
+
+.body{
+    margin-top: 200px;
+}
+
+.textodesc{
+    width: 650px;
+    font-size: 15px;
+}

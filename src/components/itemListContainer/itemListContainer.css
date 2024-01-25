@@ -19,3 +19,8 @@
     height: 200px;
     object-fit: cover;
 }
+
+.categories span {
+    cursor: pointer;
+    margin-right: 10px; 
+}

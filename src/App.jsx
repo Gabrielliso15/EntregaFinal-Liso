@@ -1,6 +1,7 @@
 //componentes
 import { MainRouter } from './router/MainRouter';
 import { useEffect } from 'react';
+import {CartProvider } from './context/CartContext';
 // estilos
 import './App.css';
 //boostrap
@@ -15,7 +16,9 @@ function App() {
 
   return (
       <div style={{width: '100vw', height : '100vh'}}>
-        <MainRouter/>
+        <CartProvider>
+          <MainRouter/>
+        </CartProvider>
     </div>
   );
 };

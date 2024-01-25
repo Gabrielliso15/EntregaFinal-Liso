@@ -8,10 +8,11 @@ export const Home = () => {
         document.title = "ClickTechStore - Home";
     })
 
-    const { productsData } = useGetProducts (15);
+    const { productsData } = useGetProducts ('products');
+
 
     return (
-        <ItemListContainer greeting = "ClickTechStore en proceso!" productsData = {productsData}/>
+        <ItemListContainer productsData = {productsData}/>
     )
 }
 

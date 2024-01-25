@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom"
 import ItemListContainer from "../components/itemListContainer/itemListContainer"
-import { useGetProductByCategory } from "../hooks/useProducts";
+import { useGetProductsByCategory } from "../hooks/useProducts";
 
 
 export const Category = () => {
     const {id} = useParams();
 
-    const {productsData} = useGetProductByCategory(id)
+    const {productsData} = useGetProductsByCategory(id)
 
     return (
         <ItemListContainer productsData={productsData}/>
